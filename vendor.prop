@@ -171,5 +171,8 @@ ro.vendor.sensors.mot_detect=true
 # Time
 persist.vendor.delta_time.enable=true
 
+# HEH filename encryption is being dropped
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Zygote
 zygote.critical_window.minute=10
