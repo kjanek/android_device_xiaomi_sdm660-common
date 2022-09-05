@@ -88,6 +88,12 @@ function blob_fixup() {
     esac
 }
 
+# Fix proprietary blobs
+BLOB_ROOT="${ANDROID_ROOT}/vendor/xiaomi/sdm660-common/proprietary"
+patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${BLOB_ROOT}/vendor/lib64/libwvhidl.so"
+patchelf --replace-needed "libprotobuf-cpp-full.so]" "libprotobuf-cpp-full-v29.so" "${BLOB_ROOT}/vendor/lib64/libsettings.so"
+patchelf --replace-needed "libprotobuf-cpp-full.so]" "libprotobuf-cpp-full-v29.so" "${BLOB_ROOT}/vendor/lib64/libril-qc-hal-qmi.so"
+
 if [ -z "${ONLY_TARGET}" ] && [ -z "${ONLY_DEVICE_COMMON}" ]; then
     # Initialize the helper for common device
     setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
