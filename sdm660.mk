@@ -122,10 +122,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     android.hardware.bluetooth@1.0.vendor
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.4-impl:32 \
