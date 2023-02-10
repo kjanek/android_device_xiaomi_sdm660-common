@@ -551,3 +551,5 @@ vendor/lib64/libwvhidl.so|0466cd3b2a7b93efd23945e2637430513472ad7c
 # Add missing libs
 vendor/lib64/libsecureui.so|7b08568b5d548d543a3e3be80845d45d82fbdb01
 vendor/lib64/libsecureui_svcsock.so|f15e94084dd66745763696af3c07cef7681ea98c
+vendor/lib/libdisplayconfig.qti.so|7992c42b4cc784348381d824037216cff9922b22
+vendor/lib64/libdisplayconfig.qti.so|ed995e14b48117b77fe8a496d00d3f879b8c7dc3
